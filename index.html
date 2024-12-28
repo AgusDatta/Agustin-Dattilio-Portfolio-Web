@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio de Agustin Dattilio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agustin Dattilio - Portfolio</title>
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome (para íconos) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CSS (para carrusel) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Hoja de Estilos principal -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="navbar container">
+        <div class="logo">Portfolio Web</div>
+
+        <!-- Botón Hamburguesa (Mobile) -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Nav list -->
+        <ul class="nav-list" id="navList">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero fade-up-observer">
+      <div class="container hero-wrapper">
+        <div class="hero-text">
+          <h2 class="intro">Hola, mi nombre es</h2>
+          <h1 id="typed-text"></h1>
+          <p class="sub">
+            Lo que puedas <span class="highlight">imaginar</span>, lo podrás
+            <span class="highlight">programar</span>.
+          </p>
+          <div class="hero-btns">
+            <a
+              href="files/CV-Actualizado-2024.pdf"
+              class="btn btn-primary"
+              download="CV_Agustin_Dattilio.pdf"
+            >
+              Descargar CV
+            </a>
+            <a
+              href="https://www.linkedin.com/in/agustindattilio/"
+              target="_blank"
+              class="btn btn-outline"
+            >
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a
+              href="https://github.com/AgusDatta"
+              target="_blank"
+              class="btn btn-outline"
+            >
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img
+            src="files/FotoCara.png"
+            alt="Agustin Dattilio"
+            class="hero-photo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="about container fade-up-observer">
+      <h2 class="section-title">Sobre Mí</h2>
+      <div class="underline">
+        <span class="line"></span>
+        <span class="dot"></span>
+        <span class="line"></span>
+      </div>
+      <div class="about-content">
+        <p>
+          <strong><span class="highlight">+1 año</span> de experiencia como programador.</strong>
+          <br />
+          Actualmente, estudio la Tecnicatura en Desarrollo de Software.
+          Mi enfoque proactivo y habilidades resolutivas me han permitido
+          sobresalir en la resolución de problemas y la innovación en el
+          entorno de la tecnología.
+        </p>
+        <br>
+        <p>
+          Desarrollé un proyecto de innovación tecnológica para una empresa
+          multinacional, basado en un Bot de WhatsApp como herramienta para
+          todos los usuarios internos.
+        </p>
+        <br>
+        <p>
+          Apasionado por las tecnologías, me dedico diariamente a aprender
+          y practicar nuevas herramientas que me permitan crecer en
+          el ambiente.
+        </p>
+      </div>
+    </section>
+
+<!-- PROYECTOS (versión anterior con 4 proyectos) -->
+<section id="proyectos" class="projects container fade-up-observer">
+    <h2 class="section-title">Proyectos</h2>
+    <div class="underline">
+      <span class="line"></span>
+      <span class="dot"></span>
+      <span class="line"></span>
+    </div>
+    <div class="projects-grid">
+      <!-- Proyecto 1: SpaceX Launches -->
+      <article class="project-card">
+        <img src="files/SpaceX-Launches.webp" alt="SpaceX Launches" />
+        <h3>SpaceX-Launches</h3>
+        <p>
+          Web conectada a la API de SpaceX para ver detalles de lanzamientos.
+          Hecha con Astro y Tailwind.
+        </p>
+        <div class="project-links">
+          <a
+            href="https://astrospacex-launches.netlify.app/"
+            target="_blank"
+            class="btn btn-sm btn-primary"
+            >Ver Sitio</a
+          >
+          <a
+            href="https://github.com/AgusDatta/SpaceX-Launches-Astro"
+            target="_blank"
+            class="btn btn-sm btn-outline"
+            >Código</a
+          >
+        </div>
+      </article>
+  
+      <!-- Proyecto 2: TotaComputacion -->
+      <article class="project-card">
+        <img src="files/TotaComputacion.webp" alt="TotaComputación" />
+        <h3>TotaComputación</h3>
+        <p>
+          Web React para un emprendimiento de servicios técnicos,
+          mostrando precios y un botón de contacto rápido.
+        </p>
+        <div class="project-links">
+          <a
+            href="https://totacomputacion.netlify.app/"
+            target="_blank"
+            class="btn btn-sm btn-primary"
+            >Ver Sitio</a
+          >
+        </div>
+      </article>
+  
+      <!-- Proyecto 3: Fake-Shop -->
+      <article class="project-card">
+        <img src="files/Fake-shop.webp" alt="Fake-Shop" />
+        <h3>Fake-Shop</h3>
+        <p>
+          E-commerce simulado con carrito y datos de FakeStore API.
+          Hecho con HTML5, CSS3 y JavaScript.
+        </p>
+        <div class="project-links">
+          <a
+            href="https://fakeshopistea.netlify.app/"
+            target="_blank"
+            class="btn btn-sm btn-primary"
+            >Ver Sitio</a
+          >
+          <a
+            href="https://github.com/AgusDatta/Fake-Shop"
+            target="_blank"
+            class="btn btn-sm btn-outline"
+            >Código</a
+          >
+        </div>
+      </article>
+  
+      <!-- Proyecto 4: Portfolio Minimalista -->
+      <article class="project-card">
+        <img
+          src="files/PortfolioMinimalista.webp"
+          alt="Portfolio Minimalista"
+        />
+        <h3>Portfolio Minimalista</h3>
+        <p>
+          Portafolio con Astro. Contenido dinámico desde un JSON
+          y estilo minimalista con impresión rápida.
+        </p>
+        <div class="project-links">
+          <a
+            href="https://portfolio-agustindattilio.netlify.app/"
+            target="_blank"
+            class="btn btn-sm btn-primary"
+            >Ver Sitio</a
+          >
+          <a
+            href="https://github.com/AgusDatta/Portfolio-Minimalista"
+            target="_blank"
+            class="btn btn-sm btn-outline"
+            >Código</a
+          >
+        </div>
+      </article>
+    </div>
+  </section>
+  
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="experience container fade-up-observer">
+      <h2 class="section-title">Experiencia</h2>
+      <div class="underline">
+        <span class="line"></span>
+        <span class="dot"></span>
+        <span class="line"></span>
+      </div>
+      <div class="experience-cards">
+        <!-- Tarjetas con tu info, tal como la necesitas -->
+        <div class="exp-card">
+          <h3>Soporte IT Nivel 2</h3>
+          <span>4iDigital, Noviembre 2024 - Actualidad</span>
+          <p>
+            Encargado de atender y resolver solicitudes de los clientes por
+            medio de un sistema de tickets. Utilizo herramientas como
+            SQL, Postman y Linux para la administración de sistemas,
+            brindando soluciones eficientes y manteniendo altos estándares
+            de calidad.
+          </p>
+        </div>
+        <div class="exp-card">
+          <h3>Analista de Operaciones</h3>
+          <span>SIA Interactive, Mayo 2024 - Noviembre 2024</span>
+          <p>
+            Administración y configuración de pantallas a través de DexManager.
+            Encargado del mercado de McDonald’s LATAM, coordinando con
+            marketing para desplegar campañas masivas y gestionando
+            control de errores en tiempo real.
+          </p>
+        </div>
+        <div class="exp-card">
+          <h3>Analista de Tecnologías de Usuarios</h3>
+          <span>Prisma Medios de Pago, Marzo 2023 - Mayo 2024</span>
+          <p>
+            Brindé soporte IT atendiendo y resolviendo inconvenientes de software
+            y hardware, tanto de manera presencial como remota. Administro dominios,
+            realizo migraciones de datos a Intune, y gestiono Microsoft Active
+            Directory y Azure. Además, manejo cintas de datos para sistemas de backup,
+            asegurando la seguridad de la información crítica.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="skills container fade-up-observer">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="underline">
+          <span class="line"></span>
+          <span class="dot"></span>
+          <span class="line"></span>
+        </div>
+      
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Cada habilidad es un .swiper-slide -->
+            <div class="swiper-slide">
+              <img src="files/html5.png" alt="HTML5" />
+              <h4>HTML5</h4>
+            </div>
+            <div class="swiper-slide">
+              <img src="files/css3.png" alt="CSS3" />
+              <h4>CSS3</h4>
+            </div>
+            <div class="swiper-slide">
+              <img src="files/javascript.png" alt="JavaScript" />
+              <h4>JavaScript</h4>
+            </div>
+            <div class="swiper-slide">
+              <img src="files/csharp.png" alt="C#" />
+              <h4>C#</h4>
+            </div>
+            <div class="swiper-slide">
+              <img src="files/nodejs.png" alt="Node.js" />
+              <h4>Node.js</h4>
+            </div>
+            <div class="swiper-slide">
+              <img src="files/dotnet.png" alt=".NET" />
+              <h4>.NET</h4>
+            </div>
+            <div class="swiper-slide">
+              <img src="files/Python.png" alt="Python" />
+              <h4>Python</h4>
+            </div>
+            <div class="swiper-slide">
+              <img src="files/Astro.png" alt="Astro" />
+              <h4>Astro</h4>
+            </div>
+            <div class="swiper-slide">
+              <img src="files/react.png" alt="React" />
+              <h4>React</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+  
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact container fade-up-observer">
+      <h2 class="section-title">Contacto</h2>
+      <div class="underline">
+        <span class="line"></span>
+        <span class="dot"></span>
+        <span class="line"></span>
+      </div>
+
+      <p class="contact-text">
+        ¿Tienes un proyecto en mente? <br />¡Hablemos!
+      </p>
+
+      <!-- Formulario Pequeño -->
+      <form id="contactForm" class="contact-form">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required />
+
+        <label for="motivo">Motivo de la Consulta</label>
+        <textarea id="motivo" name="motivo" rows="3" required></textarea>
+
+        <!-- Botones que usan la info para correo/whatsapp -->
+        <div class="contact-form-btns">
+            <!-- Botón Correo (Apple Style Primary) -->
+            <button type="button" id="contactMail" class="btn btn-primary">
+              <i class="fa-solid fa-envelope"></i>
+              Correo
+            </button>
+          
+            <!-- Botón WhatsApp (Apple Style Outline) -->
+            <button type="button" id="contactWhatsApp" class="btn btn-outline">
+              <i class="fa-brands fa-whatsapp"></i>
+              WhatsApp
+            </button>
+          </div>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © 2024 <strong>Agustin Dattilio</strong>. Construido con HTML + CSS
+          <br />
+          <a href="#hero">Volver arriba</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- SLIDER TEMA (Sol / Luna) -->
+    <div class="theme-slider" id="themeSlider" aria-label="Cambiar Tema">
+      <span class="icon-sun"><i class="fa-solid fa-sun"></i></span>
+      <div class="toggle-ball"></div>
+      <span class="icon-moon"><i class="fa-solid fa-moon"></i></span>
+    </div>
+
+    <!-- Swiper JS (para el carrusel) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Script principal -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
